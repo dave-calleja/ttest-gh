@@ -39,4 +39,4 @@ jobs:
         uses: 'BunnyWay/actions/deploy-script@main'
         with:
           script_id: 20383
-          file: "dist/index.ts"
+          file: "dist/handler.js"
