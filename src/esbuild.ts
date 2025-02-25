@@ -1,7 +1,6 @@
 import fs from 'node:fs/promises'
 import { builtinModules } from 'node:module'
 import { build } from 'esbuild'
-import esbuildPluginNodeProtocolImports from 'esbuild-plugin-node-protocol-imports'
 const MINIFY = process.env.MINIFY === 'false' ? false : true
 const allBuiltinModules = [
   ...builtinModules,
@@ -27,5 +26,5 @@ await build({
   platform: 'node',
   sourcemap: !MINIFY,
   target: 'node20.17.0',
-  plugins: [esbuildPluginNodeProtocolImports],
+  plugins: [],
 })
