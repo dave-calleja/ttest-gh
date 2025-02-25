@@ -33,7 +33,7 @@ jobs:
         uses: ./.github/actions/setup-project
 
       - name: Bundle the script into a single file
-        run: deno task build
+        run: npm run build
 
       - name: Publish the script to Bunny
         uses: 'BunnyWay/actions/deploy-script@main'
