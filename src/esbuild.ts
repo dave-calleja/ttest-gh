@@ -13,7 +13,7 @@ await fs.rm('dist', {
 })
 await build({
   banner: {
-    js: 'import * as process from "node:process";import { Buffer } from "node:buffer";globalThis.process ??= process;globalThis.Buffer ??= Buffer;globalThis.global ??= globalThis;',
+    js: '',
   },
   bundle: true,
   define: { 'process.env.NODE_ENV': '"production"' },
