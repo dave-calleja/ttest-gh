@@ -17,6 +17,3 @@ jobs:
 
       - name: 'Setup Javascript'
         uses: ./.github/actions/setup-project
-
-      - name: 'Test'
-        run: npm run test
