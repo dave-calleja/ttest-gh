@@ -1,4 +1,4 @@
-# Template: es-empty-script
+# Template: es-empty-script-2
 
 This templates demonstrates a basic script built for Bunny using a local `Deno`.
 
